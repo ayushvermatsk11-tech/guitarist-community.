@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guitarist Community</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+}
+header {
+    background: #171717;
+    padding: 22px;
+    text-align: center;
+    color: #ffbd59;
+    font-size: 26px;
+    font-weight: bold;
+}
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+}
+.hero h1 {
+    font-size: 32px;
+}
+.hero p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+button {
+    background: #ffbd59;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+section {
+    padding: 20px;
+}
+.card {
+    background: #202020;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 12px;
+}
+input, textarea {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>🎸 Guitarist Community</header>
+
+<div class="hero">
+    <h1>Every Guitarist Belongs Here</h1>
+    <p>Meet musicians, share your guitar journey, and discover your next jam partner.</p>
+    <button onclick="document.getElementById('join').scrollIntoView()">Join the Community</button>
+</div>
+
+<section>
+    <h2>🎶 Explore the Community</h2>
+
+    <div class="card">
+        <h3>🎸 Beginners</h3>
+        <p>Learn guitar basics and grow together.</p>
+    </div>
+
+    <div class="card">
+        <h3>🔥 Rock & Metal</h3>
+        <p>Connect with guitarists who love powerful riffs.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎵 Acoustic Guitar</h3>
+        <p>Share melodies, chords, and fingerstyle music.</p>
+    </div>
+</section>
+
+<section id="join">
+    <h2>Join Us</h2>
+    <p>Introduce yourself and tell us what guitar you play!</p>
+
+    <form onsubmit="event.preventDefault(); alert('Welcome to Guitarist Community! This demo does not save your details yet.');">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Tell us about your guitar journey" required></textarea>
+        <button type="submit">Join Now</button>
+    </form>
+</section>
+
+<footer>
+    Made for guitar lovers everywhere 🎸
+</footer>
+
+</body>
+</html>
